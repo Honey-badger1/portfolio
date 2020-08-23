@@ -1,0 +1,18 @@
+body{
+    background: #660066 92%;
+}
+#container{
+    font-size:50px;
+    text-align:center;
+}
+a{
+    text-decoration: none;
+    color:white;
+    
+}
+ul {
+    list-style-type: none;
+  
+    margin: 0;
+    padding: 0;
+  }
