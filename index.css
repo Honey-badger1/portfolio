@@ -1,17 +1,26 @@
 body,html{
     background: linear-gradient(60deg, rgb(129, 34, 125), rgb(42, 4, 49));
     background-repeat: no-repeat;
-    height:100%;
+    height:auto;
+    
 }
 #container{
     font-size:50px;
     text-align:center;
+    
 }
 a{
     text-decoration: none;
     color:white;
     
 }
+iframe{
+    overflow: hidden;
+    border:none;
+    height:400px;
+    width: 700px;
+}
+
 img{
     color: #000;
     width: 80px;
