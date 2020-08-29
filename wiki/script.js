@@ -1,4 +1,6 @@
 let form =document.querySelector("#search"),
+     body=document.querySelector("body"),
+     html=document.querySelector("html"),
       resultOfSearch=document.querySelector("#result"),
       searchTerm=document.querySelector("#searchTerm"),
       footer=document.querySelector('#foot'),
@@ -7,6 +9,8 @@ function showResults(results) {
 
     resultOfSearch.innerHTML="";
     searchTerm.value="";
+    body.style.height='auto';
+    html.style.height='auto';
   results.forEach(result => {
    const url = encodeURI(`https://en.wikipedia.org/wiki/${result.title}`);
 
@@ -33,7 +37,7 @@ async function getData(){
        let results = data.query.search;
        showResults(results);
      })
-     .catch(() => searchTerm.value="An error occured");
+     .catch(() => searchTerm.value="Please, write smth");
      
 
 }
@@ -46,6 +50,8 @@ form.addEventListener('submit',  (e)=>{
 
  clear.addEventListener('click',()=>{
     resultOfSearch.innerHTML="";
+    body.style.height='100%';
+    html.style.height='100%';
  }
  
  );
@@ -54,6 +60,7 @@ form.addEventListener('submit',  (e)=>{
  
   if(e.code=='Enter'){
       getData();
+      
   }}
    );
 

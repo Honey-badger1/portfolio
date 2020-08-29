@@ -1,8 +1,13 @@
 
-body {
-    background-color: rgb(16, 16, 39);
+body, html {
+    
     color:white;
     font-family: 'Lato', sans-serif;
+    height:100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: linear-gradient(60deg, rgb(25, 0, 255), black);
+    background-repeat: no-repeat;
    
 }
 .container{
@@ -47,6 +52,14 @@ nav{
     height:20px;
     margin-top:10px;
 }
+i{
+    margin-right:15px;
+}
+button{
+    border:2px solid rgb(47, 144, 235);
+    
+}
+
 
 ul {
     list-style-type: none;

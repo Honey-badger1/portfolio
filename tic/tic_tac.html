@@ -11,29 +11,36 @@
 
 <body>
     <div id="beg">
-        <h1 id="choice">Do you want to start the game?</h1>
+        <h1 id="choice">How do you want to play?</h1>
         <div id="choice">
-            <button id="yes"> Yes</button>
-            <button id="no"> No</button>
+            <button id="yes"> Play with AI</button>
+            <button id="no"> Play with Friend</button>
         </div>
     </div>
+     
+    <div id="score" class="hide">
+        <p id="You">Player 1: 0</p>
+        <p id="Player2">Player 2: 0</p>
+    </div>
+    
 
     <div id="game">
-        <div id="one" class="field" data-cell="0"></div>
-        <div id="two" class="field" data-cell="1"></div>
-        <div id="three" class="field" data-cell="2"></div>
-        <div id="four" class="field" data-cell="3"></div>
-        <div id="five" class="field" data-cell="4"></div>
-        <div id="six" class="field" data-cell="5"></div>
-        <div id="seven" class="field" data-cell="6"></div>
-        <div id="eight" class="field" data-cell="7"></div>
-        <div id="nine" class="field" data-cell="8"></div>
+
+        <span id="one" class="field" data-cell="0"></span>
+        <span id="two" class="field" data-cell="1"></span>
+        <span id="three" class="field" data-cell="2"></span>
+        <span id="four" class="field" data-cell="3"></span>
+        <span id="five" class="field" data-cell="4"></span>
+        <span id="six" class="field" data-cell="5"></span>
+        <span id="seven" class="field" data-cell="6"></span>
+        <span id="eight" class="field" data-cell="7"></span>
+        <span id="nine" class="field" data-cell="8"></span>
+        
     </div>
 
     <div id='fin'><h2 id='resPhr'></h2>
         <button id="res">Restart</button>
     </div>
-    
     <script src="tic.js"></script>
 </body>
 
