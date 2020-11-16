@@ -164,7 +164,7 @@ function choiceAI(e) {
 
   let target = e.target;
 
-  if (target.tagName == 'SPAN' && target) {
+  if (target.tagName == 'SPAN' && target.classList.contains('field')) {
     counter++;
     if (target.textContent == '') {
       target.textContent = 'X';
@@ -229,7 +229,7 @@ function choiceFD(e) {
 
   let target = e.target;
 
-  if (target.tagName == 'SPAN' && target) {
+  if (target.tagName == 'SPAN' && target.classList.contains('field')) {
     counter++;
     
     if (target.textContent == '' && current == 'X') {
